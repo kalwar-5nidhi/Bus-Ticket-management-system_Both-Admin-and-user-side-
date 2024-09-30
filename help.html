@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Help</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Help</h1>
+        </header>
+        
+        <section class="help-section">
+            <h2 class="dropdown-toggle" onclick="toggleDropdown('getting-started')">Getting Started <span class="dropdown-arrow">&#9660;</span></h2>
+            <div id="getting-started" class="dropdown-content">
+                <p>Welcome to our bus booking platform! Follow these steps to get started:</p>
+                <ol>
+                    <li><strong>Sign Up:</strong> If you're new, click on the "Sign Up" or "Register" button on the homepage.</li>
+                    <li><strong>Provide Details:</strong> Fill out the registration form with your name, email, and password.</li>
+                    <li><strong>Verify Email:</strong> Check your email for a verification link and click to confirm your account.</li>
+                    <li><strong>Log In:</strong> Once verified, return to the site and log in using your email and password.</li>
+                    <li><strong>Search for Buses:</strong> Enter your travel details (origin, destination, dates) on the search form.</li>
+                    <li><strong>Select and Book:</strong> Browse available buses, select seats, and proceed to payment to confirm your booking.</li>
+                </ol>
+                <p>Need assistance? Contact our support team for help with registration or booking.</p>
+            </div>
+        </section>
+        
+        <section class="help-section">
+            <h2 class="dropdown-toggle" onclick="toggleDropdown('booking-tickets')">Booking Tickets <span class="dropdown-arrow">&#9660;</span></h2>
+            <div id="booking-tickets" class="dropdown-content">
+                <p>Follow these steps to book tickets on our platform:</p>
+                <ol>
+                    <li><strong>Search for Buses:</strong> On the homepage or booking page, enter your travel details including origin, destination, and travel dates. Click "Search."</li>
+                    <li><strong>View Available Buses:</strong> Browse through the list of available buses matching your search criteria. Review schedules, fares, and amenities.</li>
+                    <li><strong>Select Seats:</strong> Choose your preferred seats from the seat map displayed for each bus. Seats that are already booked will be marked as unavailable.</li>
+                    <li><strong>Enter Passenger Details:</strong> Provide passenger information including names, ages, and contact details.</li>
+                    <li><strong>Proceed to Payment:</strong> Review your booking summary, including the total fare and selected seats. Choose a payment method and complete the transaction securely.</li>
+                    <li><strong>Receive Confirmation:</strong> Once payment is successful, you will receive a booking confirmation via email or SMS with your ticket details.</li>
+                </ol>
+                <p>For any issues during the booking process, reach out to our customer support for assistance.</p>
+            </div>
+        </section>
+        
+        <section class="help-section">
+            <h2 class="dropdown-toggle" onclick="toggleDropdown('baggage-policies')">Baggage Allowance and Policies <span class="dropdown-arrow">&#9660;</span></h2>
+            <div id="baggage-policies" class="dropdown-content">
+                <p>Learn about our baggage allowance and policies:</p>
+                <ul>
+                    <li><strong>Baggage Limits:</strong> Understand the maximum weight and size restrictions for carry-on and checked baggage.</li>
+                    <li><strong>Restricted Items:</strong> Review the list of prohibited items that cannot be carried onboard.</li>
+                    <li><strong>Additional Charges:</strong> Information about fees for excess baggage and special items.</li>
+                </ul>
+                <p>If you have specific questions regarding baggage, feel free to contact us for assistance.</p>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <h2 class="dropdown-toggle" onclick="toggleDropdown('booking-modifications')">Booking Modifications and Seat Selection <span class="dropdown-arrow">&#9660;</span></h2>
+            <div id="booking-modifications" class="dropdown-content">
+                <p>Learn how to modify bookings and select seats:</p>
+                <ul>
+                    <li><strong>Change Date/Time:</strong> Process for modifying travel dates and times for booked tickets.</li>
+                    <li><strong>Upgrade Seats:</strong> Options to upgrade or change selected seats for your journey.</li>
+                    <li><strong>Cancellation Policy:</strong> Understand our cancellation policy and applicable fees.</li>
+                </ul>
+                <p>For assistance with booking modifications or seat selection, please contact our support team.</p>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <h2 class="dropdown-toggle" onclick="toggleDropdown('safety-security')">Safety and Security Measures <span class="dropdown-arrow">&#9660;</span></h2>
+            <div id="safety-security" class="dropdown-content">
+                <p>Your safety is our priority. Here are our safety and security measures:</p>
+                <ul>
+                    <li><strong>Bus Maintenance:</strong> Information about our regular bus maintenance procedures.</li>
+                    <li><strong>Driver Training:</strong> Our drivers undergo rigorous training for safe driving practices.</li>
+                    <li><strong>Emergency Protocols:</strong> Procedures for handling emergencies during the journey.</li>
+                    <li><strong>Passenger Guidelines:</strong> Tips and guidelines for ensuring a safe and comfortable journey.</li>
+                </ul>
+                <p>If you have any safety concerns or need assistance during your travel, please notify our staff immediately.</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Contact us at support@example.com for further assistance.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDropdown(sectionId) {
+            var dropdownContent = document.getElementById(sectionId);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .fullname {
+    margin-bottom: 15px;
+}
+
+.container .fullname label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .fullname input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.container .num {
+    margin-bottom: 15px;
+}
+
+.container .num label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .num input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.container .password {
+    margin-bottom: 15px;
+}
+
+.container .password label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .password input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.container .Signinas {
+    margin-bottom: 20px; /* Added margin-bottom for spacing */
+    display: flex;
+    align-items: center;
+}
+
+.container .Signinas label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .Signinas select {
+    width: 25%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.container .Signup button {
+    margin-top: 20px; /* Added margin-top for spacing */
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container .Signup button:hover {
+    background-color: #0056b3;
+}
+
+.container .Signin {
+    margin: 20px;
+    text-align: center;
+}
+
+.container .Signin a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container .Signin a:hover {
+    text-decoration: underline;
+}

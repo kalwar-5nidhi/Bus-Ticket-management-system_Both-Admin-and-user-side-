@@ -1,0 +1,228 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 80px;
+    font-size: 24px;
+  }
+  
+  .logo img {
+    max-width: 800px; 
+  }
+  .aboutus,
+  .help {
+      background-color: #416fb4;
+      border-radius: 30px;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-size: 19px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  /* Specific margin settings for .aboutus and .help */
+  .aboutus {
+      margin-right: 25px; /* Adjust this value as needed */
+  }
+  
+  .help {
+      margin-left: 450px;
+  }
+  
+  header h1 {
+    margin: 0;
+    text-align: center;
+    padding: 20px 40px;
+  }
+ 
+
+ 
+  /*user dropdown menue*/
+ 
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline;
+  } */
+
+  /* .user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-dropdown img {
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-dropdown:hover .dropdown-content {
+    display: block;
+  } */
+  /*././/////*/
+  /* homee.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+nav .Login button {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+nav .Login button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .Login button:hover {
+    background-color: #ff4757;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* User Login Button Container */
+.login-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.login-container .user-login-btn {
+    background-color: #416fb4;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.login-container .user-login-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-container .user-login-btn:hover {
+    background-color: #1066e8;
+}
+
+/* Footer */
+footer {
+    background-color: #416fb4;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .links {
+        margin: 1rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}

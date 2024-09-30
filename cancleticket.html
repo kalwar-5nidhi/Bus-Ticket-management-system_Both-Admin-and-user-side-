@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Ticket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cancel Ticket</h1>
+        <form id="cancel-ticket-form">
+            <label for="ticket-number">Ticket Number</label>
+            <input type="text" id="ticket-number" name="ticket-number" placeholder="Enter your ticket number" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            
+            <button type="submit">Cancel Ticket</button>
+        </form>
+        <div id="message" class="hidden"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

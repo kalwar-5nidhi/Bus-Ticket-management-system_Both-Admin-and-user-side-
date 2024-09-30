@@ -1,0 +1,176 @@
+.top {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space out child elements to either end */
+  align-items: center; /* Vertically center child elements */
+  padding: 20px;
+}
+
+.topbuttons {
+  display: flex; /* Use flexbox layout */
+  gap: 10px; /* Space out buttons within the container */
+}
+
+.card {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header h1 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+.seat-info {
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.available-count,
+.selected-count,
+.booked-count {
+  font-weight: bold;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left; /* Align the keyboard's content to the right */
+}
+.keyboard {
+  /* width: 50%; /* Adjust as necessary */
+  max-width: 800px; /* Adjust the max-width as needed */
+}
+
+.seat {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.seat img {
+  width: 30px; 
+  height: 30px; 
+}
+
+.seat:hover img {
+  transform: scale(1.1);
+}
+
+/* Style for available seats */
+.seat.available {
+  background-color: #fff; /* White background */
+}
+
+/* Style for selected seats */
+.seat.selected {
+  background-color: #444; /* Dark background color */
+}
+
+/* Style for booked seats */
+.seat.booked {
+  background-color: #888; /* Grey background color */
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right side */
+  margin-top: 30px;
+}
+
+.help,
+.about,
+.book {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.help:hover,
+.about:hover,
+.book:hover {
+  background-color: #45a049;
+}
+/**/
+/* CSS */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirmDialog {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+/* Styles for the booking button */
+#bookButton {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#bookButton:hover {
+  background-color: #45a049;
+}
+#confirmDialog {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 400px; /* Maximum width */
+  border-radius: 10px;
+  text-align: center;
+}
+
+#confirmDialog p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#confirmDialog button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+#confirmDialog button:hover {
+  background-color: #45a049;
+}
